@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: review-processor-service
+  namespace: default
+  labels:
+    app: review-processor
+spec:
+  selector:
+    app: review-processor
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: NodePort
