@@ -18,8 +18,8 @@ spec:
     spec:
       containers:
         - name: review-processor
-          image: review-processor:latest
-          imagePullPolicy: Never
+          image: nafin12/review-processor:latest
+          imagePullPolicy: Always
           ports:
             - containerPort: 8000
           readinessProbe:
